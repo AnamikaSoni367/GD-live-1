@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GDLive</title>
+    <script src="/js/landing.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Grandstander:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/gdtips.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </nav>
+    <nav class="navbar navbar-white bg-white" id="nav">
+        <a class="navbar-brand"><img class="images" src="/images/download.jpg" alt="pic"></a>
+        <p class="site-title"><a href="" rel="home">Group Discussion Ideas</a></p>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><button class="btn btn-primary" type="Home">Home</button> <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="active">
+                    <a class="nav-link" href="Latestpost.ejs"><button class="btn btn-primary" type="button">Latest
+                            Post</button></a>
+                </li>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="screen-reader-text"></span>
+                        Categories
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Current
+                                Affairs</a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Abstract
+                                Topics</a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">General Toics
+                            </a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Social Issues
+                            </a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Economic
+                                Topics</a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Political Topics
+                            </a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Educational
+                                Topics</a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Technology
+                                Topics</a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Environmental
+                                Topics</a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">International
+                                Topics</a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Science
+                                Topics</a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Ethical
+                                Topics</a></button>
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><button class="btn btn-primary" type="latest post">All
+                            GD Topics</button></a>
+                </li>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="screen-reader-text"></span>
+                        Level
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Easy
+                                Topics</a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Medium Level
+                                Topics</a></button>
+                        <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Advanced Topics
+                            </a></button>
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><button class="btn btn-primary" type="latest post">write to
+                            us</button></a>
+                </li>
+        </div>
+        </li>
+        </ul>
+        </div>
+    </nav>
+   
+    <div class="container" style="border: 2px solid black;">
+      
+        <div class="col-xs-12 col-sm-12 col-md-8">
+            <h2>Looking for a plateform to improve your COMMUNICATION SKILL?</h2>
+            <p style="font-family: 'Comfortaa', cursive">
+                Do not worry. Use our free video calling app and Make GD to your friends that will increase your
+                communication skill :)
+            </p>
+            <div class="row">
+                <div class="col-xs-4 col-sm-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Create Room</h5>
+                            <p class="card-text">Dont have a meeting room yet! why waiting... </p>
+                            <button type="button" class="btn btn-primary" id="Meet_Now" onclick="Meetnow()">Create a
+                                Room</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8 col-sm-7">
+                    <div class="card mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Join a Meeting</h5>
+                            <p class="card-text">Someone already created a room. Why waiting?</p>
+                            <label for="inp_Join">Enter Room Id</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="inp_Join" placeholder="Enter the Room ID">
+                            </div>
+                            <button type="button" class="btn btn-success" id="Meet_Now" onclick="Join()">Enter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <a class="nav-link" href="index.ejs"><button class="btn btn-primary" type="button">click on me for live chat
+            </button></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
